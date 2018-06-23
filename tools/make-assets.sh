@@ -16,6 +16,8 @@ rm -rf $DES
 mkdir $DES
 cp    ./assets/assets.json                                       $DES/
 
+git -C ../uAssets/ pull
+
 mkdir $DES/thirdparties
 cp -R ../uAssets/thirdparties/easylist-downloads.adblockplus.org $DES/thirdparties/
 cp -R ../uAssets/thirdparties/mirror1.malwaredomains.com         $DES/thirdparties/
